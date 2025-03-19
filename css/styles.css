@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;500;700;800&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --blue-100: #D7EDFF;
+    --bg: #F6FCFF;
+    --bg-doc: #5B6871;
+    --blue-200: #92A5AF;
+    --blue-500: #4094F7;
+    --blue-600: #0E73F6;
+    --blue-700: #4094F7;
+    --bg2: #F8F8F8;
+    --custom-color: #84919A;
+    --custom-color2: #252C32;
+    --darkBlue-color: #191C30;
+    --light-gray-blue: #7b7b87;
+    --shadow-01: 0px 4px 24px 0px #0000001F;
+    --btn-color: #F6F8F9;
+    --border: #DDE2E4;
+    --plac: #9AA6AC;
+
+}
+
+input[type="date"]::before {
+    content: attr(data-placeholder);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 14px;
+    color: var(--plac);
+    pointer-events: none;
+    font-weight: 400;
+
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before {
+    display: none;
+}
+
+input[type="date"]::-webkit-datetime-edit {
+    color: transparent;
+}
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    height: 100%;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    vertical-align: middle;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    white-space: normal;
+}
+
+input,
+button,
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    outline: none;
+}
+
+body {
+    background: var(--bg);
+    width: 100%;
+    box-sizing: inherit;
+    position: relative;
+    min-height: 100%;
+    font-size: 14px;
+    letter-spacing: -0.006em;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+    color: var(--custom-color2);
+
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1416px;
+    margin: 0 auto;
+}
+
+.main {
+    flex: 1;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-bottom: 16px;
+}
+
+
+

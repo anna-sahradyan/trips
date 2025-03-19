@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Trips</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="header_inner">
+            <div class="title_logo">Поездки</div>
+            <div class="btn_box">
+                <button class="btn_link">Заболоцкий К.О <img src="/images/arrow.svg" alt="arrow" width="16" height="16">
+                </button>
+            </div>
+        </div>
+
+    </header>
+    <div class="main-spacer">
+        <div class="button_input_wrapper">
+            <div class="btn_actions">
+                <div class="btn_actions_title">
+                    Мои поездки
+                </div>
+                <button class="trip-button"><img src="/images/plus.svg" alt="plus">Оформить поездку</button>
+            </div>
+
+            <div class="input_actions">
+                <div class="input_wrapper_date">
+
+                    <div class="input_wrapper">
+                        <span class="period">Период с: </span>
+                        <input type="text" name="start_date" class="input_text" data-placeholder="Выберите дату"
+                               id="start_date">
+                        <span class="calendar-icon" data-date-input-id="start_date">
+           <img src="/images/close.svg" alt="close" width="16" height="16">
+           <img src="/images/card.svg" alt="date" width="16" height="16">
+       </span>
+                    </div>
+                    <div class="input_wrapper">
+                        <span class="period">по:</span>
+                        <input type="text" name="end_date" class="input_text" data-placeholder="Выбрать..."
+                               id="end_end">
+                        <span class="calendar-icon2" data-date-input-id="end_end">
+           <img src="/images/card.svg" alt="date" width="16" height="16">
+       </span>
+                    </div>
+                </div>
+                <div class="input_wrapper_search"><input type="text" name="search" class="search_input"
+                                                         placeholder="Поиск..."><img src="/images/search.svg"
+                                                                                     alt="search"
+                                                                                     class="search_input_icon"
+                                                                                     width="16" height="16"></div>
+
+                <div class="reset_all"><img src="/images/close_2.svg" alt="close" class="close_icon">
+                    <button class="reset_btn">Сбросить все</button>
+                </div>
+
+
+                <div class="checkbox_box">
+                    <input type="checkbox" name="choose" id="archive_checkbox" class="checkbox_btn"><img
+                        src="/images/check.svg"
+                        alt="check" width="16" height="16" class="icon_check_img">
+                    <label for="archive_checkbox">Показать архивные поездки</label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <main class="main">
+                <div class="trip_container">
+
+                    <div class="trip_row_container">
+                        <div class="row_trip_one trip_row">
+                            <span class="trip_header_cell">№ поездки</span>
+                            <span class="trip_header_cell">Дата поездки</span>
+                            <span class="trip_header_cell">Сумма, план</span>
+                            <span class="trip_header_cell">Сумма, факт</span>
+                            <span class="trip_header_cell">Город</span>
+                            <span class="trip_header_cell">Статус</span>
+                        </div>
+
+                        <div class="row_trip_two trip_row">
+                            <span class="trip_data_cell">000115</span>
+                            <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">Москва, Ярославль, Ижевск, Владимир</span>
+                            <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                        </div>
+                    </div>
+                    <div class="trip_row_container">
+                        <div class="row_trip_one trip_row">
+                            <span class="trip_header_cell">№ поездки</span>
+                            <span class="trip_header_cell">Дата поездки</span>
+                            <span class="trip_header_cell">Сумма, план</span>
+                            <span class="trip_header_cell">Сумма, факт</span>
+                            <span class="trip_header_cell">Город</span>
+                            <span class="trip_header_cell">Статус</span>
+                        </div>
+
+                        <div class="row_trip_two trip_row">
+                            <span class="trip_data_cell">000117</span>
+                            <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">Москва</span>
+                            <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                        </div>
+                    </div>
+                    <div class="trip_row_container">
+                        <div class="row_trip_one trip_row">
+                            <span class="trip_header_cell">№ поездки</span>
+                            <span class="trip_header_cell">Дата поездки</span>
+                            <span class="trip_header_cell">Сумма, план</span>
+                            <span class="trip_header_cell">Сумма, факт</span>
+                            <span class="trip_header_cell">Город</span>
+                            <span class="trip_header_cell">Статус</span>
+                        </div>
+
+                        <div class="row_trip_two trip_row">
+                            <span class="trip_data_cell">000117</span>
+                            <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">Москва, Ярославль, Ижевск, Владимир</span>
+                            <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                        </div>
+                    </div>
+                    <div class="trip_row_container">
+                    <div class="row_trip_one trip_row">
+                        <span class="trip_header_cell">№ поездки</span>
+                        <span class="trip_header_cell">Дата поездки</span>
+                        <span class="trip_header_cell">Сумма, план</span>
+                        <span class="trip_header_cell">Сумма, факт</span>
+                        <span class="trip_header_cell">Город</span>
+                        <span class="trip_header_cell">Статус</span>
+                    </div>
+
+                    <div class="row_trip_two trip_row">
+                        <span class="trip_data_cell">000117</span>
+                        <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell tooltip-container" data-tooltip="Москва, Ярославль, Ижевск, Владимир" > Петропавловск-Камчатский, Новосибирск, Волгоград...,</span>
+                        <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                    </div>
+                </div>
+                    <div class="trip_row_container">
+                    <div class="row_trip_one trip_row">
+                        <span class="trip_header_cell">№ поездки</span>
+                        <span class="trip_header_cell">Дата поездки</span>
+                        <span class="trip_header_cell">Сумма, план</span>
+                        <span class="trip_header_cell">Сумма, факт</span>
+                        <span class="trip_header_cell">Город</span>
+                        <span class="trip_header_cell">Статус</span>
+                    </div>
+
+                    <div class="row_trip_two trip_row">
+                        <span class="trip_data_cell">000117</span>
+                        <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">Москва</span>
+                        <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                    </div>
+                </div>
+                    <div class="trip_row_container">
+                    <div class="row_trip_one trip_row">
+                        <span class="trip_header_cell">№ поездки</span>
+                        <span class="trip_header_cell">Дата поездки</span>
+                        <span class="trip_header_cell">Сумма, план</span>
+                        <span class="trip_header_cell">Сумма, факт</span>
+                        <span class="trip_header_cell">Город</span>
+                        <span class="trip_header_cell">Статус</span>
+                    </div>
+
+                    <div class="row_trip_two trip_row">
+                        <span class="trip_data_cell">000117</span>
+                        <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">Москва</span>
+                        <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                    </div>
+                </div>
+                    <div class="trip_row_container">
+                    <div class="row_trip_one trip_row">
+                        <span class="trip_header_cell">№ поездки</span>
+                        <span class="trip_header_cell">Дата поездки</span>
+                        <span class="trip_header_cell">Сумма, план</span>
+                        <span class="trip_header_cell">Сумма, факт</span>
+                        <span class="trip_header_cell">Город</span>
+                        <span class="trip_header_cell">Статус</span>
+                    </div>
+
+                    <div class="row_trip_two trip_row">
+                        <span class="trip_data_cell">000117</span>
+                        <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">Москва</span>
+                        <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                    </div>
+                </div>
+                    <div class="trip_row_container">
+                    <div class="row_trip_one trip_row">
+                        <span class="trip_header_cell">№ поездки</span>
+                        <span class="trip_header_cell">Дата поездки</span>
+                        <span class="trip_header_cell">Сумма, план</span>
+                        <span class="trip_header_cell">Сумма, факт</span>
+                        <span class="trip_header_cell">Город</span>
+                        <span class="trip_header_cell">Статус</span>
+                    </div>
+
+                    <div class="row_trip_two trip_row">
+                        <span class="trip_data_cell">000117</span>
+                        <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell">29 400,00</span>
+                        <span class="trip_data_cell tooltip-container" data-tooltip="Москва, Ярославль, Ижевск, Владимир">
+        Москва, Ярославль, Ижевск, Владимир
+    </span>
+                        <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                    </div>
+                </div>
+                    <div class="trip_row_container">
+                        <div class="row_trip_one trip_row">
+                            <span class="trip_header_cell">№ поездки</span>
+                            <span class="trip_header_cell">Дата поездки</span>
+                            <span class="trip_header_cell">Сумма, план</span>
+                            <span class="trip_header_cell">Сумма, факт</span>
+                            <span class="trip_header_cell">Город</span>
+                            <span class="trip_header_cell">Статус</span>
+                        </div>
+
+                        <div class="row_trip_two trip_row">
+                            <span class="trip_data_cell">000117</span>
+                            <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell tooltip-container" data-tooltip="Москва, Ярославль, Ижевск, Владимир">
+        Москва, Ярославль, Ижевск, Владимир
+    </span>
+                            <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                        </div>
+                    </div>
+                    <div class="trip_row_container">
+                        <div class="row_trip_one trip_row">
+                            <span class="trip_header_cell">№ поездки</span>
+                            <span class="trip_header_cell">Дата поездки</span>
+                            <span class="trip_header_cell">Сумма, план</span>
+                            <span class="trip_header_cell">Сумма, факт</span>
+                            <span class="trip_header_cell">Город</span>
+                            <span class="trip_header_cell">Статус</span>
+                        </div>
+
+                        <div class="row_trip_two trip_row">
+                            <span class="trip_data_cell">000117</span>
+                            <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">Москва, Ярославль, Ижевск, Владимир</span>
+                            <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                        </div>
+                    </div>
+                    <div class="trip_row_container">
+                        <div class="row_trip_one trip_row">
+                            <span class="trip_header_cell">№ поездки</span>
+                            <span class="trip_header_cell">Дата поездки</span>
+                            <span class="trip_header_cell">Сумма, план</span>
+                            <span class="trip_header_cell">Сумма, факт</span>
+                            <span class="trip_header_cell">Город</span>
+                            <span class="trip_header_cell">Статус</span>
+                        </div>
+
+                        <div class="row_trip_two trip_row">
+                            <span class="trip_data_cell">000117</span>
+                            <span class="trip_data_cell">22.02.2024 - 27.02.2024</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell">29 400,00</span>
+                            <span class="trip_data_cell tooltip-container" data-tooltip="Москва, Ярославль, Ижевск, Владимир">
+        Москва, Ярославль, Ижевск, Владимир
+    </span>
+                            <span class="trip_data_cell"><button class="trip_data_cell_btn">Документы</button></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+    </main>
+</div>
+
+<script src="/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+</html>

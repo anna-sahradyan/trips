@@ -1,0 +1,250 @@
+.header {
+    width: 100%;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 24px 0 #0000001F;
+    background-color: var(--white);
+}
+
+.header_inner {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.btn_box {
+
+}
+
+.btn_link {
+    cursor: pointer;
+    max-width: 174px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    min-height: 24px;
+    background-color: var(--white);
+    color: var(--blue-600);
+    font-weight: 400;
+    font-size: 14px;
+    gap: 16px;
+
+}
+
+
+.title_logo {
+    padding-top: 20px;
+    margin-left: 366px;
+    font-weight: 600;
+    min-height: 64px;
+    font-size: 14px;
+    text-transform: capitalize;
+    border-bottom: 1px solid var(--blue-700);
+}
+
+.main-spacer {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    min-height: 104px;
+}
+
+.button_input_wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn_actions {
+    display: flex;
+    flex-direction: row;
+    min-height: 56px;
+    align-items: center;
+    justify-content: left;
+    background-color: var(--bg2);
+    gap: 24px;
+    padding-left: 14px;
+}
+
+.btn_actions_title {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.014em;
+
+}
+
+.trip-button {
+    cursor: pointer;
+    background-color: var(--blue-700);
+    min-height: 24px;
+    width: 100%;
+    max-width: 178px;
+    border-radius: 4px;
+    color: var(--btn-color);
+    display: flex;
+    gap: 11px;
+    font-size: 14px;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.006em;
+
+}
+
+.trip-button img {
+    padding-left: 16px;
+}
+
+/*input row*/
+
+.input_actions {
+    display: flex;
+    flex-direction: row;
+    min-height: 48px;
+    align-items: center;
+    padding-left: 16px;
+
+}
+
+/*input_date*/
+.input_wrapper_date {
+    display: flex;
+    width: 100%;
+    max-width: 560px;
+
+}
+
+.period {
+    display: flex;
+}
+
+.input_wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+    gap: 8px;
+}
+
+.calendar-icon {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    top: 50%;
+    right: 10%;
+    z-index: 2;
+    transform: translateY(-50%);
+    gap: 10px;
+
+}
+
+.calendar-icon2 {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    top: 50%;
+    right: 28%;
+    z-index: 2;
+    transform: translateY(-50%);
+    gap: 10px;
+
+}
+
+.input_text {
+    cursor: pointer;
+    width: 180px;
+    min-height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    z-index: 1;
+    background-color: var(--white);
+    padding: 0 5px;
+}
+
+/*input search*/
+.input_wrapper_search {
+    position: relative;
+    display: flex;
+    margin-left: -40px;
+}
+
+.search_input {
+    position: relative;
+    width: 260px;
+    min-height: 32px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    z-index: 1;
+    background-color: var(--white);
+    padding: 0 5px;
+}
+
+.search_input_icon {
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    top: 50%;
+    right: 3%;
+    z-index: 2;
+    transform: translateY(-50%);
+}
+
+/*reset button*/
+.reset_all {
+    display: flex;
+    align-items: center;
+    margin-left: 32px;
+    gap: 8px;
+}
+
+.reset_btn {
+    color: var(--blue-500);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+}
+
+/*checkbox button*/
+.checkbox_box {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
+    margin-right: 16px;
+    align-items: center;
+    position: relative;
+}
+
+input[type='checkbox']:after {
+    font-family: "Font Awesome 6 Free";
+    content: "\f00c";
+    font-weight: 600;
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    right: 90.5%;
+    display: none;
+
+}
+
+input[type='checkbox']:checked:after {
+    display: block;
+
+}
+
+.checkbox_box {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 16px;
+}
+
+
+

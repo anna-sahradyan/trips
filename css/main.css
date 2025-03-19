@@ -1,0 +1,231 @@
+.trip_container {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    gap: 8px;
+    padding: 16px 8px;
+    height: 780px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+}
+
+.trip_container::-webkit-scrollbar {
+    width: 3px;
+}
+
+.trip_container::-webkit-scrollbar-track {
+    background: #1A202433;
+    border-radius: 4px;
+}
+
+.trip_container::-webkit-scrollbar-thumb {
+    background: #1A202433;
+    border-radius: 4px;
+}
+
+
+.row_trip_one {
+    width: 100%;
+    max-width: 1416px;
+    display: flex;
+
+
+}
+
+.row_trip_two {
+    width: 100%;
+    max-width: 1416px;
+    display: flex;
+    color: #333;
+
+
+}
+
+.trip_header_cell {
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #84919A;
+}
+
+.trip_data_cell,.tooltip-container {
+    text-align: left;
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--darkBlue-color);
+}
+
+.trip_data_cell[title] {
+    cursor: pointer;
+}
+
+
+.trip_row {
+    display: flex;
+    background-color: var(--white);
+
+}
+
+.trip_row:first-child {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.trip_row:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.trip_header_cell:nth-child(1) {
+    width: 80px;
+
+}
+
+/* № поездки */
+.trip_header_cell:nth-child(2) {
+    width: 120px;
+}
+
+/* Дата поездки */
+.trip_header_cell:nth-child(3) {
+    width: 100px;
+}
+
+/* Сумма, план */
+.trip_header_cell:nth-child(4) {
+    width: 100px;
+}
+
+/* Сумма, факт */
+.trip_header_cell:nth-child(5) {
+    width: 300px;
+}
+
+/* Город */
+.trip_header_cell:nth-child(6) {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-right: -50px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #84919A;
+
+}
+
+
+/* Статус */
+
+.trip_data_cell:nth-child(1) {
+    width: 80px;
+}
+
+/* № поездки */
+.trip_data_cell:nth-child(2) {
+    width: 120px;
+}
+
+/* Дата поездки */
+.trip_data_cell:nth-child(3) {
+    width: 100px;
+}
+
+/* Сумма, план */
+.trip_data_cell:nth-child(4) {
+    width: 100px;
+}
+
+/* Сумма, факт */
+.trip_data_cell:nth-child(5) {
+    width: 300px;
+}
+
+
+.trip_data_cell:nth-child(6) {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    margin-right: -50px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.trip_data_cell_btn {
+    width: 84px;
+    min-height: 24px;
+    background-color: var(--bg-doc);
+    color: #EEF0F2;
+    border-radius: 10px;
+
+}
+
+/*tooltip*/
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    overflow: visible;
+    max-height: none;
+}
+
+.tooltip-container::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #303940;
+    color: #F6F8F9;
+    width: 203px;
+    min-height: 48px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: normal;
+    word-wrap: break-word;
+    opacity: 0;
+    font-weight: 400;
+    line-height: 16px;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 8px;
+    text-align: center;
+}
+
+.tooltip-container::before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 30%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #303940 transparent transparent transparent;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.tooltip-container:hover::after,
+.tooltip-container:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
